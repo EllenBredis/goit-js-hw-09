@@ -38,7 +38,6 @@ const dataMins = document.querySelector('[data-minutes]');
 const dataSecs = document.querySelector('[data-seconds]');
 console.log(dateChoice)
 
-let timerId = null;
 btnStart.disabled = true;
 
 const options = {
@@ -56,7 +55,7 @@ const options = {
             btnStart.disabled = false;
           }
           btnStart.addEventListener('click', () => {
-            timerId= setInterval(() => {
+            let timerId= setInterval(() => {
               const differenceInTime = selectedDates[0] - new Date();
       
               if (differenceInTime < 1000) {
