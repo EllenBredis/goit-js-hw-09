@@ -2,7 +2,7 @@ const body= document.querySelector('body');
 const bodyBgColor = document.querySelector('.color');
 const changeColorBtnStart = document.querySelector('[data-start]');
 const changeColorBtnStop = document.querySelector('[data-stop]');
-
+let timerId = null;
 // changeColorBtnStop.setAttribute("disabled", "disabled")
 changeColorBtnStop.disabled=true;
 

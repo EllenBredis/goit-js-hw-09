@@ -38,7 +38,7 @@ const dataMins = document.querySelector('[data-minutes]');
 const dataSecs = document.querySelector('[data-seconds]');
 console.log(dateChoice)
 
-
+let timerId = null;
 btnStart.disabled = true;
 
 const options = {
