@@ -24,8 +24,8 @@ changeColorBtnStart.addEventListener("click", () => {
 
   changeColorBtnStop.addEventListener("click", () => {
     clearInterval(timerId);
-    changeColorBtnStart.disabled = false;
-    changeColorBtnStop.disabled=true; 
-    // changeColorBtnStart.removeAttribute("disabled", "disabled");
-    // changeColorBtnStop.setAttribute("disabled", "disabled")
+    // changeColorBtnStart.disabled = false;
+    // changeColorBtnStop.disabled=true; 
+    changeColorBtnStart.removeAttribute("disabled", "disabled");
+    changeColorBtnStop.setAttribute("disabled", "disabled")
       });
